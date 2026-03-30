@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": "masinska-obrada",
+      "icon": "cog",
+      "title": "Osnovna mašinska obrada",
+      "description": "Precizna obrada metalnih dijelova prema tehničkoj dokumentaciji. Tokarenje, glodanje i bušenje sa visokim standardima tolerancija.",
+      "features": ["Tokarenje", "Glodanje", "Bušenje"]
+    },
+    {
+      "id": "busenje-blokova",
+      "icon": "drill",
+      "title": "Bušenje blokova motora",
+      "description": "Profesionalno bušenje i honovanje cilindara motornih blokova. Obnova dimenzija na originalne tolerancije proizvođača.",
+      "features": ["Bušenje cilindara", "Honovanje", "Mjerenje kružnosti"]
+    },
+    {
+      "id": "obrada-glava",
+      "icon": "engine",
+      "title": "Obrada glava motora",
+      "description": "Ravnanje i brušenje sjedišta ventila na glavama motora. Provjera ravnosti i obnova brtvenih površina.",
+      "features": ["Ravnanje glave", "Brušenje ventila", "Provjera ravnosti"]
+    },
+    {
+      "id": "brusenje-radilica",
+      "icon": "gear",
+      "title": "Brušenje radilica",
+      "description": "Precizno brušenje ležajnih mjesta radilica i bregastih osovina na standardne remontne mjere.",
+      "features": ["Brušenje ležajnih mjesta", "Poliranje", "Mjerenje ovalizacije"]
+    },
+    {
+      "id": "obrada-klipnjaca",
+      "icon": "wrench",
+      "title": "Obrada klipnjača",
+      "description": "Kontrola i korekcija geometrije klipnjača. Provjera paralelnosti i torzijskog savijanja.",
+      "features": ["Ravnanje klipnjača", "Provjera geometrije", "Balansiranje"]
+    },
+    {
+      "id": "varenje-testovi",
+      "icon": "shield",
+      "title": "Varenje, hidro-testovi i presa",
+      "description": "Zavarivanje aluminijskih i čeličnih dijelova motora. Hidro-test za provjeru propusnosti glave motora. Presovanje ležajeva i čaura.",
+      "features": ["TIG/MIG varenje", "Hidro-testovi", "Presovanje"]
+    }
+  ]
+}

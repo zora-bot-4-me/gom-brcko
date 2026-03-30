@@ -1,0 +1,55 @@
+:root {
+  /* Boje */
+  --color-bg:           #111111;
+  --color-bg-alt:       #141414;
+  --color-bg-card:      #1a1a1a;
+  --color-bg-input:     #0d0d0d;
+  --color-border:       #2a2a2a;
+  --color-border-hover: #444444;
+
+  --color-accent:       #2a8fd4;
+  --color-accent-dark:  #1a7ab8;
+  --color-accent-dim:   rgba(42, 143, 212, 0.08);
+  --color-accent-glow:  rgba(42, 143, 212, 0.25);
+
+  --color-text:         #f0f0f0;
+  --color-text-muted:   #888888;
+  --color-text-dark:    #111111;
+
+  --color-success:      #22c55e;
+  --color-error:        #ef4444;
+
+  /* Fontovi */
+  --font-heading: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Veličine fonta */
+  --text-hero:   clamp(2.8rem, 6vw, 5.5rem);
+  --text-h2:     clamp(2rem, 4vw, 3rem);
+  --text-h3:     clamp(1.2rem, 2.5vw, 1.5rem);
+  --text-body:   1rem;
+  --text-small:  0.875rem;
+  --text-label:  0.7rem;
+
+  /* Spacing */
+  --section-py:  clamp(4rem, 8vw, 7rem);
+  --container:   1200px;
+  --gap:         1.5rem;
+
+  /* Oblici */
+  --radius-card: 6px;
+  --radius-btn:  4px;
+  --radius-input: 4px;
+
+  /* Sjene */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px var(--color-accent-glow);
+
+  /* Tranzicije */
+  --trans-fast:  150ms ease;
+  --trans-base:  300ms ease;
+  --trans-slow:  600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Navbar visina */
+  --navbar-h: 70px;
+}

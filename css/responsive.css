@@ -1,0 +1,119 @@
+/* ── Tablet landscape (do 1024px) ── */
+@media (max-width: 1024px) {
+  #onama .onama-grid {
+    gap: 2.5rem;
+  }
+
+  #kontakt .kontakt-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* ── Tablet portrait (do 768px) ── */
+@media (max-width: 768px) {
+  /* Navbar — hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: var(--navbar-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    transform: translateX(100%);
+    transition: transform var(--trans-base);
+    z-index: 999;
+  }
+
+  #navbar.nav-open .nav-links {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+
+  /* Hero */
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  /* O nama */
+  #onama .onama-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Kontakt */
+  #kontakt .kontakt-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Galerija */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  #cta .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── Mobilni (do 480px) ── */
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .onama-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lb-prev { left: 0.5rem; }
+  .lb-next { right: 0.5rem; }
+
+  #lb-img {
+    max-height: 70vh;
+  }
+
+  .section-header h2::after {
+    display: none;
+  }
+}

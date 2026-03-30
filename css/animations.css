@@ -1,0 +1,136 @@
+/* Scroll-reveal animacija */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity var(--trans-slow) var(--delay, 0ms),
+    transform var(--trans-slow) var(--delay, 0ms);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade-in samo (bez pomaka) */
+.reveal-fade {
+  opacity: 0;
+  transition: opacity var(--trans-slow) var(--delay, 0ms);
+}
+
+.reveal-fade.revealed {
+  opacity: 1;
+}
+
+/* Hero animacija pri učitavanju */
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-content .label {
+  animation: heroIn 0.7s ease both;
+  animation-delay: 0.1s;
+}
+
+.hero-content h1 {
+  animation: heroIn 0.8s ease both;
+  animation-delay: 0.25s;
+}
+
+.hero-content .hero-sub {
+  animation: heroIn 0.8s ease both;
+  animation-delay: 0.4s;
+}
+
+.hero-actions {
+  animation: heroIn 0.8s ease both;
+  animation-delay: 0.55s;
+}
+
+.hero-stats {
+  animation: heroIn 0.8s ease both;
+  animation-delay: 0.7s;
+}
+
+/* Lightbox fade */
+@keyframes lbFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#lightbox:not([hidden]) {
+  animation: lbFadeIn 0.2s ease;
+}
+
+/* ── ZUPČANICI ANIMACIJA ── */
+.gears-wrap {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: clamp(220px, 30vw, 420px);
+  color: var(--color-accent);
+  opacity: 0.4;
+  pointer-events: none;
+  animation: heroIn 1s ease both 0.8s;
+}
+
+.gears-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Smjer kazaljke na satu */
+@keyframes rotateCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Suprotno od kazaljke */
+@keyframes rotateCCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.gear-cw {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotateCW 8s linear infinite;
+}
+
+.gear-ccw {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotateCCW 5s linear infinite;
+}
+
+.gear-slow {
+  animation-duration: 14s;
+}
+
+@media (max-width: 1024px) {
+  .gears-wrap { opacity: 0.25; width: clamp(160px, 24vw, 280px); }
+}
+@media (max-width: 768px) {
+  .gears-wrap { display: none; }
+}
+
+/* Amber pulse na hover dugmadi */
+@keyframes accentPulse {
+  0%   { box-shadow: 0 0 0 0 var(--color-accent-glow); }
+  70%  { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+.btn-accent:focus-visible {
+  animation: accentPulse 0.6s ease;
+}

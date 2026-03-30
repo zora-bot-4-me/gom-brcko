@@ -1,0 +1,462 @@
+/* ── DUGMAD ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  transition: background var(--trans-fast), color var(--trans-fast),
+              border-color var(--trans-fast), box-shadow var(--trans-fast),
+              transform var(--trans-fast);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  border-color: var(--color-accent);
+}
+
+.btn-accent:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border-hover);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── SERVIS KARTICE ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--gap);
+}
+
+.service-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  padding: 1.75rem;
+  transition: border-color var(--trans-base), box-shadow var(--trans-base),
+              transform var(--trans-base);
+}
+
+.service-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+.svc-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.svc-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.svc-title {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.svc-desc {
+  font-size: var(--text-small);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.svc-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.svc-features li {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 2px;
+  padding: 0.2rem 0.6rem;
+}
+
+/* ── ZAŠTO MI? ── */
+.zasto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--gap);
+}
+
+.zasto-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: border-color var(--trans-base), transform var(--trans-base);
+}
+
+.zasto-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.zasto-icon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-accent-dim);
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.25rem;
+  color: var(--color-accent);
+}
+
+.zasto-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.zasto-card h3 {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.zasto-card p {
+  font-size: var(--text-small);
+  line-height: 1.6;
+}
+
+/* ── CTA BANNER ── */
+#cta {
+  background: var(--color-accent);
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+#cta .cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#cta h2 {
+  color: var(--color-text-dark);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  max-width: 600px;
+}
+
+#cta h2 em {
+  font-style: normal;
+  opacity: 0.75;
+  display: block;
+  font-size: 0.6em;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.btn-dark {
+  background: var(--color-text-dark);
+  color: var(--color-accent);
+  border-color: var(--color-text-dark);
+  white-space: nowrap;
+}
+
+.btn-dark:hover {
+  background: #222;
+  border-color: #222;
+  color: var(--color-accent);
+}
+
+/* ── FORMA ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input);
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+  font-size: var(--text-body);
+  transition: border-color var(--trans-fast), box-shadow var(--trans-fast);
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-dim);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-card);
+  font-size: var(--text-small);
+  font-weight: 500;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: var(--color-success);
+}
+
+.form-status.error {
+  display: block;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--color-error);
+}
+
+/* ── BACK TO TOP ── */
+#back-to-top {
+  position: fixed;
+  bottom: 7.2rem;
+  right: 1.5rem;
+  z-index: 900;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background var(--trans-fast),
+    box-shadow var(--trans-fast);
+}
+
+#back-to-top svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#back-to-top:hover {
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 16px var(--color-accent-glow);
+}
+
+/* ── ALPCODER BADGE ── */
+.alpcoder-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 0;
+  z-index: 9999;
+  border-radius: 12px 0 0 12px;
+  width: 180px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 500ms ease, box-shadow 500ms ease;
+}
+
+.alpcoder-badge:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Slika planine */
+.badge-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transform: translateY(-10%);
+  opacity: 0.4;
+  transition: opacity 500ms ease;
+}
+
+.alpcoder-badge:hover .badge-bg {
+  opacity: 0.65;
+}
+
+/* Zlatno sunce — pojavljuje se na hover */
+.badge-sun {
+  position: absolute;
+  top: -2rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 220, 50, 0.8) 0%, rgba(255, 160, 0, 0.4) 40%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 500ms ease, transform 500ms ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.alpcoder-badge:hover .badge-sun {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Tamni overlay sa gradijentom s desne strane */
+.badge-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(17, 24, 39, 0.5) 0%, transparent 50%, rgba(17, 24, 39, 0.7) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Tekst — desno poravnan */
+.badge-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 1rem;
+}
+
+.badge-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.badge-line1 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.badge-line2 {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgb(156, 163, 175);
+  letter-spacing: 0.05em;
+  align-self: flex-end;
+}
+
+/* ── RADNO VRIJEME ── */
+.radno-vrijeme {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+}
+
+.radno-vrijeme h4 {
+  font-size: var(--text-small);
+  font-family: var(--font-heading);
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.radno-red {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-small);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.radno-red:last-child {
+  border-bottom: none;
+}
+
+.radno-red .dani {
+  color: var(--color-text-muted);
+}
+
+.radno-red .vrijeme {
+  color: var(--color-text);
+  font-weight: 500;
+}
