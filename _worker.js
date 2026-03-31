@@ -47,15 +47,21 @@ export default {
         return new Response('OAuth greška: token nije dobiven.', { status: 500 });
       }
 
-      // Vrati token CMS-u putem postMessage
+      // Vrati token CMS-u putem postMessage (Decap CMS handshake protokol)
+      const tokenJson = JSON.stringify(JSON.stringify({ token, provider: 'github' }));
       const html = `<!DOCTYPE html><html><body><script>
         (function() {
-          const msg = 'authorization:github:success:' +
-            JSON.stringify({ token: ${JSON.stringify(token)}, provider: 'github' });
-          window.opener && window.opener.postMessage(msg, '*');
-          window.close();
+          var payload = ${tokenJson};
+          function sendToken(e) {
+            if (e.data === 'authorizing:github') {
+              window.removeEventListener('message', sendToken, false);
+              e.source.postMessage('authorization:github:success:' + payload, e.origin);
+            }
+          }
+          window.addEventListener('message', sendToken, false);
+          window.opener && window.opener.postMessage('authorizing:github', '*');
         })();
-      </script></body></html>`;
+      <\/script></body></html>`;
 
       return new Response(html, {
         headers: { 'Content-Type': 'text/html; charset=utf-8' },
