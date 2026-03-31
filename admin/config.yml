@@ -68,5 +68,9 @@ collections:
             fields:
               - { label: ID, name: id, widget: string }
               - { label: Naziv, name: title, widget: string }
-              - { label: Opis, name: desc, widget: text }
-              - { label: Ikonica (SVG path), name: icon, widget: string }
+              - { label: Opis, name: description, widget: text }
+              - { label: Ikonica, name: icon, widget: string }
+              - label: Prednosti (lista)
+                name: features
+                widget: list
+                field: { label: Stavka, name: item, widget: string }
