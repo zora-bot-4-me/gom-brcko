@@ -20,6 +20,10 @@ fetch('data/galerija.json')
       fig.innerHTML = `<img src="${slika.fajl}" alt="${slika.alt}" loading="lazy" /><div class="gallery-overlay">${OVERLAY_SVG}</div>`;
       grid.appendChild(fig);
     });
+    // Registruj nove elemente kod reveal observera
+    if (window.__revealObserver) {
+      grid.querySelectorAll('.reveal').forEach(el => window.__revealObserver.observe(el));
+    }
   });
 
 const lightbox  = document.getElementById('lightbox');

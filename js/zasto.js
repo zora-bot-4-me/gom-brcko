@@ -24,4 +24,8 @@ fetch('data/zasto.json')
       div.innerHTML = `<div class="zasto-icon">${icon}</div><h3>${card.naslov}</h3><p>${card.opis}</p>`;
       grid.appendChild(div);
     });
+    // Registruj nove elemente kod reveal observera
+    if (window.__revealObserver) {
+      grid.querySelectorAll('.reveal').forEach(el => window.__revealObserver.observe(el));
+    }
   });
