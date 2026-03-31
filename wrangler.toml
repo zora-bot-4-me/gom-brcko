@@ -3,6 +3,9 @@ main = "_worker.js"
 compatibility_date = "2025-09-27"
 compatibility_flags = ["nodejs_compat"]
 
+[vars]
+GITHUB_CLIENT_ID = "Ov23li9YgRmbHlU4ZsTA"
+
 [assets]
 directory = "."
 binding = "ASSETS"
