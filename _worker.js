@@ -8,7 +8,7 @@ export default {
     // ── OAuth: redirect to GitHub login ──────────────────
     if (url.pathname === '/oauth') {
       const params = new URLSearchParams({
-        client_id:    env.GITHUB_CLIENT_ID,
+        client_id:    env.GH_CLIENT_ID,
         redirect_uri: `${url.origin}/oauth/callback`,
         scope:        'repo',
       });
@@ -33,8 +33,8 @@ export default {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            client_id:     env.GITHUB_CLIENT_ID,
-            client_secret: env.GITHUB_CLIENT_SECRET,
+            client_id:     env.GH_CLIENT_ID,
+            client_secret: env.GH_CLIENT_SECRET,
             code,
           }),
         }
