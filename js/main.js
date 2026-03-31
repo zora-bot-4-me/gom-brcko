@@ -108,3 +108,19 @@ function countUp(el) {
 setTimeout(() => {
   document.querySelectorAll('.stat-num[data-target]').forEach(countUp);
 }, 750);
+
+// ── CTA iz JSON-a ──
+fetch('data/cta.json').then(r => r.json()).then(d => {
+  const n = document.getElementById('cta-naglasak');
+  const t = document.getElementById('cta-tekst');
+  const b = document.getElementById('cta-dugme');
+  if (n) n.textContent = d.naglasak;
+  if (t) t.textContent = d.tekst;
+  if (b) b.textContent = d.dugme;
+});
+
+// ── Footer iz JSON-a ──
+fetch('data/footer.json').then(r => r.json()).then(d => {
+  const el = document.getElementById('footer-copyright');
+  if (el) el.textContent = d.copyright;
+});

@@ -45,6 +45,20 @@ collections:
             widget: list
             field: { label: Mašina, name: item, widget: string }
 
+      - name: cta
+        label: CTA Banner (poziv na akciju)
+        file: data/cta.json
+        fields:
+          - { label: Naglasak (italic tekst), name: naglasak, widget: string }
+          - { label: Tekst, name: tekst, widget: string }
+          - { label: Dugme — tekst, name: dugme, widget: string }
+
+      - name: footer
+        label: Footer
+        file: data/footer.json
+        fields:
+          - { label: Copyright tekst, name: copyright, widget: string }
+
       - name: kontakt
         label: Kontakt info
         file: data/kontakt.json
