@@ -1,0 +1,12 @@
+{
+  "title1": "Precizna mašinska",
+  "title2": "obrada motora",
+  "subtitle": "Više od 20 godina iskustva u obradi motornih dijelova. Brčko Distrikt, Bosna i Hercegovina.",
+  "btn1_text": "Naše usluge",
+  "btn2_text": "Kontaktirajte nas",
+  "stats": [
+    { "num": 20, "suffix": "+", "label": "Godina iskustva" },
+    { "num": 6,  "suffix": "",  "label": "Vrsta usluga" },
+    { "num": 100,"suffix": "%", "label": "Zadovoljnih klijenata" }
+  ]
+}

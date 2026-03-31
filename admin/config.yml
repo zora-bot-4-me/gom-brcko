@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: zora-bot-4-me/gom-brcko
+  branch: master
+  base_url: https://gom-brcko.zora-robot-1.workers.dev
+  auth_endpoint: /oauth
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+
+  # ── Sadržaj stranice ──────────────────────────────────
+  - name: sadrzaj
+    label: Sadržaj stranice
+    files:
+
+      - name: hero
+        label: Početna strana (Hero)
+        file: data/hero.json
+        fields:
+          - { label: Naslov (linija 1), name: title1, widget: string }
+          - { label: Naslov (linija 2 — plava), name: title2, widget: string }
+          - { label: Podnaslov, name: subtitle, widget: text }
+          - { label: Dugme 1 — tekst, name: btn1_text, widget: string }
+          - { label: Dugme 2 — tekst, name: btn2_text, widget: string }
+          - label: Statistike
+            name: stats
+            widget: list
+            fields:
+              - { label: Broj, name: num, widget: number }
+              - { label: Sufiks (+ ili %), name: suffix, widget: string }
+              - { label: Opis, name: label, widget: string }
+
+      - name: onama
+        label: O nama
+        file: data/onama.json
+        fields:
+          - { label: Naslov sekcije, name: title, widget: string }
+          - { label: Paragraf 1, name: p1, widget: text }
+          - { label: Paragraf 2, name: p2, widget: text }
+          - { label: Paragraf 3, name: p3, widget: text }
+          - label: Oprema (lista mašina)
+            name: oprema
+            widget: list
+            field: { label: Mašina, name: item, widget: string }
+
+      - name: kontakt
+        label: Kontakt info
+        file: data/kontakt.json
+        fields:
+          - { label: Adresa, name: adresa, widget: string }
+          - { label: Telefon, name: telefon, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Radno vrijeme, name: radno_vrijeme, widget: string }
+
+  # ── Usluge ────────────────────────────────────────────
+  - name: usluge
+    label: Usluge
+    files:
+      - name: services
+        label: Lista usluga
+        file: data/services.json
+        fields:
+          - label: Usluge
+            name: services
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Naziv, name: title, widget: string }
+              - { label: Opis, name: desc, widget: text }
+              - { label: Ikonica (SVG path), name: icon, widget: string }

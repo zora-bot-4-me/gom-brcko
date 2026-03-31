@@ -1,0 +1,16 @@
+{
+  "title": "O nama",
+  "p1": "GOM Brčko je specijalizovana radionica za mašinsku obradu motornih dijelova sa više od 20 godina iskustva. Naš tim stručnjaka pruža vrhunske usluge popravke i regeneracije motora za putnička i teretna vozila.",
+  "p2": "Opremljeni smo najmodernijim mašinama i alatima koji nam omogućavaju preciznu obradu svih vrsta motornih dijelova. Koristimo najnovije tehnologije i metode kako bismo osigurali da svaki dio koji napusti našu radionicu bude u savršenom stanju.",
+  "p3": "Naša lokacija u Brčko Distriktu omogućava nam da pružamo usluge klijentima iz cijele Bosne i Hercegovine, kao i iz susjednih zemalja. Ponosni smo na našu reputaciju i povjerenje koje su nam ukazali naši klijenti tokom godina.",
+  "oprema": [
+    "CNC strugovi",
+    "Honovanje cilindara",
+    "Brušenje radilica",
+    "Ravnanje glava motora",
+    "Bušenje i razvrtanje",
+    "Balansiranje dijelova",
+    "Mjerenje i kontrola",
+    "Zavarivanje i navarivanje"
+  ]
+}

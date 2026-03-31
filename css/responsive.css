@@ -11,6 +11,10 @@
 
 /* ── Tablet portrait (do 768px) ── */
 @media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Navbar — hamburger */
   .hamburger {
     display: flex;
@@ -77,6 +81,18 @@
 @media (max-width: 480px) {
   .container {
     padding-inline: 1rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content .hero-sub {
+    margin-inline: auto;
+  }
+
+  .onama-oprema {
+    grid-template-columns: 1fr;
   }
 
   .hero-stats {
