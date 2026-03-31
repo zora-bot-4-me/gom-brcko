@@ -1,0 +1,26 @@
+{
+  "title": "Zašto odabrati GOM?",
+  "label": "Naše prednosti",
+  "cards": [
+    {
+      "id": "iskustvo",
+      "naslov": "20+ Godina iskustva",
+      "opis": "Dvije decenije preciznog rada na motornim dijelovima govore više od bilo koje reklame."
+    },
+    {
+      "id": "oprema",
+      "naslov": "Moderna oprema",
+      "opis": "Radimo na profesionalnoj mašinskoj opremi koja osigurava preciznost prema tvorničkim specifikacijama."
+    },
+    {
+      "id": "povjerenje",
+      "naslov": "Lokalno povjerenje",
+      "opis": "Stotine zadovoljnih klijenata iz Brčkog i okoline koji se uvijek vraćaju po kvalitetnu uslugu."
+    },
+    {
+      "id": "rokovi",
+      "naslov": "Isporuka u roku",
+      "opis": "Poštujemo dogovorene rokove jer znamo da vaš motor ne smije čekati dulje nego što je potrebno."
+    }
+  ]
+}

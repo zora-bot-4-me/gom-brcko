@@ -54,6 +54,35 @@ collections:
           - { label: Email, name: email, widget: string }
           - { label: Radno vrijeme, name: radno_vrijeme, widget: string }
 
+      - name: zasto
+        label: Zašto odabrati GOM
+        file: data/zasto.json
+        fields:
+          - { label: Naslov sekcije, name: title, widget: string }
+          - { label: Oznaka (mala), name: label, widget: string }
+          - label: Kartice prednosti
+            name: cards
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Naslov, name: naslov, widget: string }
+              - { label: Opis, name: opis, widget: text }
+
+      - name: galerija
+        label: Galerija
+        file: data/galerija.json
+        fields:
+          - { label: Naslov sekcije, name: title, widget: string }
+          - { label: Oznaka (mala), name: label, widget: string }
+          - label: Slike
+            name: slike
+            widget: list
+            fields:
+              - { label: Thumbnail (putanja), name: fajl, widget: string }
+              - { label: Puna slika (putanja), name: full, widget: string }
+              - { label: Alt tekst, name: alt, widget: string }
+              - { label: Opis slike, name: caption, widget: string }
+
   # ── Usluge ────────────────────────────────────────────
   - name: usluge
     label: Usluge

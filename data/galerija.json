@@ -1,0 +1,18 @@
+{
+  "title": "Galerija",
+  "label": "Naša radionica",
+  "slike": [
+    { "fajl": "images/gallery/thumb/radionica-01.jpg", "full": "images/gallery/full/radionica-01.jpg", "alt": "Oprema radionice", "caption": "Oprema radionice — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-02.jpg", "full": "images/gallery/full/radionica-02.jpg", "alt": "Mašinska oprema", "caption": "Mašinska oprema — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-03.jpg", "full": "images/gallery/full/radionica-03.jpg", "alt": "Radionica", "caption": "Radionica — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-04.jpg", "full": "images/gallery/full/radionica-04.jpg", "alt": "Strug", "caption": "Strug — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-05.jpg", "full": "images/gallery/full/radionica-05.jpg", "alt": "Glodalica", "caption": "Glodalica — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-06.jpg", "full": "images/gallery/full/radionica-06.jpg", "alt": "Honjerica", "caption": "Honjerica — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-07.jpg", "full": "images/gallery/full/radionica-07.jpg", "alt": "Bušilica", "caption": "Bušilica — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-08.jpg", "full": "images/gallery/full/radionica-08.jpg", "alt": "Oprema radionice", "caption": "Oprema radionice — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-09.jpg", "full": "images/gallery/full/radionica-09.jpg", "alt": "Radionica", "caption": "Radionica — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-10.jpg", "full": "images/gallery/full/radionica-10.jpg", "alt": "Mašinska obrada", "caption": "Mašinska obrada — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-11.jpg", "full": "images/gallery/full/radionica-11.jpg", "alt": "Oprema", "caption": "Oprema — GOM Brčko" },
+    { "fajl": "images/gallery/thumb/radionica-12.jpg", "full": "images/gallery/full/radionica-12.jpg", "alt": "Radionica GOM Brčko", "caption": "Radionica GOM Brčko" }
+  ]
+}

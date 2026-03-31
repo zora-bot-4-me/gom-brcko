@@ -116,39 +116,10 @@
   <section id="zasto">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
-        <span class="label">Naše prednosti</span>
-        <h2>Zašto odabrati GOM?</h2>
+        <span id="zasto-label" class="label">Naše prednosti</span>
+        <h2 id="zasto-title">Zašto odabrati GOM?</h2>
       </div>
-      <div class="zasto-grid">
-        <div class="zasto-card reveal">
-          <div class="zasto-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <h3>20+ Godina iskustva</h3>
-          <p>Dvije decenije preciznog rada na motornim dijelovima govore više od bilo koje reklame.</p>
-        </div>
-        <div class="zasto-card reveal" style="--delay:80ms">
-          <div class="zasto-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
-          </div>
-          <h3>Moderna oprema</h3>
-          <p>Radimo na profesionalnoj mašinskoj opremi koja osigurava preciznost prema tvorničkim specifikacijama.</p>
-        </div>
-        <div class="zasto-card reveal" style="--delay:160ms">
-          <div class="zasto-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Lokalno povjerenje</h3>
-          <p>Stotine zadovoljnih klijenata iz Brčkog i okoline koji se uvijek vraćaju po kvalitetnu uslugu.</p>
-        </div>
-        <div class="zasto-card reveal" style="--delay:240ms">
-          <div class="zasto-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Isporuka u roku</h3>
-          <p>Poštujemo dogovorene rokove jer znamo da vaš motor ne smije čekati dulje nego što je potrebno.</p>
-        </div>
-      </div>
+      <div id="zasto-grid" class="zasto-grid"></div>
     </div>
   </section>
 
@@ -211,61 +182,11 @@
   <section id="galerija">
     <div class="container">
       <div class="section-header reveal">
-        <span class="label">Iz naše radionice</span>
-        <h2>Galerija</h2>
+        <span id="galerija-label" class="label">Iz naše radionice</span>
+        <h2 id="galerija-title">Galerija</h2>
         <p>Pogledajte opremu i prostor naše radionice.</p>
       </div>
-
-      <div id="gallery-grid" class="gallery-grid">
-        <figure class="gallery-item reveal" data-full="images/gallery/full/radionica-01.jpg" data-caption="Oprema radionice — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-01.jpg" alt="Oprema radionice" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:60ms" data-full="images/gallery/full/radionica-02.jpg" data-caption="Mašinska oprema — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-02.jpg" alt="Mašinska oprema" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:120ms" data-full="images/gallery/full/radionica-03.jpg" data-caption="Radionica — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-03.jpg" alt="Radionica" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:180ms" data-full="images/gallery/full/radionica-04.jpg" data-caption="Strug — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-04.jpg" alt="Strug" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:240ms" data-full="images/gallery/full/radionica-05.jpg" data-caption="Glodalica — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-05.jpg" alt="Glodalica" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:300ms" data-full="images/gallery/full/radionica-06.jpg" data-caption="Honjerica — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-06.jpg" alt="Honjerica" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:360ms" data-full="images/gallery/full/radionica-07.jpg" data-caption="Bušilica — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-07.jpg" alt="Bušilica" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:420ms" data-full="images/gallery/full/radionica-08.jpg" data-caption="Oprema radionice — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-08.jpg" alt="Oprema radionice" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:480ms" data-full="images/gallery/full/radionica-09.jpg" data-caption="Radionica — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-09.jpg" alt="Radionica" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:540ms" data-full="images/gallery/full/radionica-10.jpg" data-caption="Mašinska obrada — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-10.jpg" alt="Mašinska obrada" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:600ms" data-full="images/gallery/full/radionica-11.jpg" data-caption="Oprema — GOM Brčko">
-          <img src="images/gallery/thumb/radionica-11.jpg" alt="Oprema" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-        <figure class="gallery-item reveal" style="--delay:660ms" data-full="images/gallery/full/radionica-12.jpg" data-caption="Radionica GOM Brčko">
-          <img src="images/gallery/thumb/radionica-12.jpg" alt="Radionica GOM Brčko" loading="lazy" />
-          <div class="gallery-overlay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
-        </figure>
-      </div>
+      <div id="gallery-grid" class="gallery-grid"></div>
     </div>
   </section>
 
@@ -452,6 +373,7 @@
   <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
   <script src="js/services.js"></script>
+  <script src="js/zasto.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/contact.js"></script>
 

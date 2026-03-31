@@ -1,5 +1,27 @@
 'use strict';
 
+// ── Učitaj galeriju iz JSON-a ──
+const OVERLAY_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
+
+fetch('data/galerija.json')
+  .then(r => r.json())
+  .then(data => {
+    const grid = document.getElementById('gallery-grid');
+    if (!grid) return;
+    if (data.label) document.getElementById('galerija-label').textContent = data.label;
+    if (data.title) document.getElementById('galerija-title').textContent = data.title;
+    data.slike.forEach((slika, i) => {
+      const delay = i * 60;
+      const fig = document.createElement('figure');
+      fig.className = 'gallery-item reveal';
+      if (delay) fig.style.setProperty('--delay', delay + 'ms');
+      fig.dataset.full    = slika.full;
+      fig.dataset.caption = slika.caption;
+      fig.innerHTML = `<img src="${slika.fajl}" alt="${slika.alt}" loading="lazy" /><div class="gallery-overlay">${OVERLAY_SVG}</div>`;
+      grid.appendChild(fig);
+    });
+  });
+
 const lightbox  = document.getElementById('lightbox');
 const lbImg     = document.getElementById('lb-img');
 const lbCaption = document.getElementById('lb-caption');
